@@ -18,7 +18,7 @@ _commit="bbb19d7946e50720ccebd485c2f86f78f67adc22"
 # Kernel architecture and packaging
 _carch="arm64"
 _flavor="${pkgname#linux-}"
-_config="config-nokia-pl2.$arch"
+_config="config-$_flavor.$arch"
 _outdir="out"
 
 makedepends="
@@ -70,5 +70,5 @@ package() {
 
 sha512sums="
 dcd4f786cb46a999bbc2fd4ad4ce2db0728fd4001c94ecbb6739f84fef47b9c6a8f0a229f0d1fcf13ddf594deef5edf6a575a9a013f45574e358bf5dae8bf717  linux-nokia-pl2-downstream-bbb19d7946e50720ccebd485c2f86f78f67adc22.tar.gz
-6f530318ea1d7fe5a93438dbb5e2f72ad36b290a132cf2c8029868dbd512d17aa41a67d33fc41f07079642a117c2bcd18cf6541c0a6650b7a6ffb5d4544aa238  config-nokia-pl2.aarch64
+6f530318ea1d7fe5a93438dbb5e2f72ad36b290a132cf2c8029868dbd512d17aa41a67d33fc41f07079642a117c2bcd18cf6541c0a6650b7a6ffb5d4544aa238  config-nokia-pl2-downstream.aarch64
 "
