@@ -10,7 +10,6 @@ license="MIT"
 depends="openrc 
 	android-tools-mkbootimg
 	linux-nokia-pl2-downstream
-	msm-firmware-loader-openrc
         postmarketos-base
 	postmarketos-base-downstream
 	"
