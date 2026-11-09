@@ -7,7 +7,7 @@ pkgdesc="HMD Global Nokia 6.1 (2018)"
 url="https://nura.eco"
 arch="aarch64"
 license="MIT"
-depends="
+depends="openrc 
 	android-tools-mkbootimg
 	linux-nokia-pl2-downstream
 	msm-firmware-loader-openrc
