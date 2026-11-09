@@ -1,0 +1,35 @@
+# Reference: <https://nura.eco/devicepkg>
+maintainer=""
+pkgname=device-nokia-pl2-downstream
+pkgver=1
+pkgrel=0
+pkgdesc="HMD Global Nokia 6.1 (2018)"
+url="https://nura.eco"
+arch="aarch64"
+license="MIT"
+depends="
+	android-tools-mkbootimg
+	linux-nokia-pl2-downstream
+	msm-firmware-loader-openrc
+        postmarketos-base
+	postmarketos-base-downstream
+	"
+makedepends="devicepkg-dev"
+source="
+	deviceinfo
+	modules-initfs
+	"
+options="!archcheck !check"
+
+build() {
+	devicepkg_build $startdir $pkgname
+}
+
+package() {
+	devicepkg_package $startdir $pkgname
+}
+
+sha512sums="
+4e8af9c2bc5048a9ce789631458390fc1d5397ce743cfea432ac84cfa83827eaa82b190f944933d71fb7c8340fa548ab6989e5c3bac56364d28f74c159765e91  deviceinfo
+b72651f69a315e971635a9d4e26d592d76b762162a2926339d2d68e359fef2f11f972e18fef0b8a9092b79c88707adf54c56825481c6202f94298adf5cf2f5c5  modules-initfs
+"
