@@ -16,7 +16,7 @@ deviceinfo_initfs_compression="gzip"
 
 # Bootloader related
 deviceinfo_flash_method="fastboot"
-deviceinfo_kernel_cmdline="androidboot.hardware=qcom msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.configfs=true sched_enable_power_aware=1 androidboot.usbcontroller=a800000.dwc3 service_locator.enable=1 swiotlb=1 loop.max_part=7 androidboot.boot_devices=soc/c0c4000.sdhci"
+deviceinfo_kernel_cmdline="androidboot.hardware=qcom msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.configfs=true sched_enable_power_aware=1 androidboot.usbcontroller=a800000.dwc3 service_locator.enable=1 swiotlb=1 loop.max_part=7 androidboot.boot_devices=soc/c0c4000.sdhci ignore_loglevel loglevel=8 printk.time=1 initcall_debug"
 deviceinfo_generate_bootimg="true"
 deviceinfo_flash_pagesize="4096"
 deviceinfo_bootimg_qcdt="false"
