@@ -23,6 +23,7 @@ _outdir="out"
 
 makedepends="
 	bash
+	gcc-armv7
 	bc
 	bison
 	devicepkg-dev
@@ -59,7 +60,8 @@ prepare() {
 build() {
 	unset LDFLAGS
 
-	make O="$_outdir" ARCH="$_carch" CC="${CC:-gcc}" \
+	make O="$_outdir" ARCH="$_carch" CC="${CC:-gcc}" \\
+		CROSS_COMPILE_ARM32="armv7-alpine-linux-musleabihf-" \\
 		KBUILD_BUILD_VERSION="$((pkgrel + 1))-postmarketOS"
 }
 
