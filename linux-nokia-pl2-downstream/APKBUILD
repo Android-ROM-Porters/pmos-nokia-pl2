@@ -1,7 +1,7 @@
 # Reference: https://postmarketos.org/vendorkernel
 # Kernel config based on: arch/arm64/configs/
 
-maintainer=""
+maintainer="Reyaansh <bhavya150520@gmail.com>"
 pkgname=linux-nokia-pl2-downstream
 pkgver=4.4.219
 pkgrel=0
