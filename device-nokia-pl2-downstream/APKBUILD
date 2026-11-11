@@ -1,5 +1,5 @@
 # Reference: <https://nura.eco/devicepkg>
-maintainer=""
+maintainer="Reyaansh <bhavya150520@gmail.com>"
 pkgname=device-nokia-pl2-downstream
 pkgver=1
 pkgrel=0
